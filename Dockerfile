@@ -1,15 +1,31 @@
-FROM node:14
+# Base on offical Node.js Alpine image
+FROM node:alpine
 
-RUN mkdir /ec_frontend
+# Set working directory
+WORKDIR /usr/app
 
-WORKDIR /ec_frontend
+# Install PM2 globally
+RUN npm install --global pm2
 
-COPY ./package.json /ec_frontend
+# Copy package.json and package-lock.json before other files
+# Utilise Docker cache to save re-installing dependencies if unchanged
+COPY ./package*.json ./
 
-RUN npm install
+# Install dependencies
+RUN npm install --production
 
-COPY . /ec_frontend
+# Copy all files
+COPY ./ ./
 
-RUN npm run build 
+# Build app
+RUN npm run build
 
-CMD ["npm", "start"]
+# Expose the listening port
+EXPOSE 3000
+
+# Run container as non-root (unprivileged) user
+# The node user is provided in the Node.js Alpine base image
+USER node
+
+# Run npm start script with PM2 when container starts
+CMD [ "pm2-runtime", "npm", "--", "start" ]
