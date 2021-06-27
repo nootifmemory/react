@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import anime from "animejs";
 import Link from "next/link";
-import WaveTop from "./WaveTop";
+import WaveTop from "./wavetop";
 const NavBar = function () {
   const [type, setType] = useState(undefined);
 

@@ -3,7 +3,7 @@ import { getPostdata, getAuthStrapi ,getImgdata } from "../../lib/fetchpost";
 import matter from "gray-matter";
 import remark from "remark";
 import html from "remark-html";
-import Post from "../../components/Pages/Post"
+import Post from "../../components/pages/post"
 // ---------------*** NO ISR ***---------------//
 async function getHTMLpostdata(data) {
   const matterResult = matter(data);

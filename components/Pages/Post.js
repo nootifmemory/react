@@ -1,4 +1,4 @@
-import Title from "../Title";
+import Title from "../title";
 
 export default function Post({ postData, content, getTags }) {
   const date = new Date(postData.date)

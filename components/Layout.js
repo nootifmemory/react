@@ -1,14 +1,14 @@
-import Header from "./Header";
-import Loading from "./Loading";
-import NavBar from "./NavBar";
+import Header from "./header";
+import Loading from "./loading";
+import NavBar from "./navbar";
 import { useState, useEffect } from "react";
 import Router from "next/router";
-import WaveBottom from "./WaveBottom";
-import WaveTop from "./WaveTop";
+import WaveBottom from "./wavebottom";
+import WaveTop from "./wavetop";
 import lozad from "lozad";
-import ImgList from "./ImgList";
-import Sidebar from "./Sidebar";
-import Footer from "./Footer";
+import ImgList from "./imglist";
+import Sidebar from "./sidebar";
+import Footer from "./footer";
 import Head from "next/head";
 
 // Random Function

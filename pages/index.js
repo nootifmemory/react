@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout from "../components/layout";
 import { getPostdata, getAuthStrapi , getImgdata} from "../lib/fetchpost";
-import Page from "../components/Pages/Page"
+import Page from "../components/pages/page"
 
 function getDescription(data) {
   var data =
