@@ -30,14 +30,14 @@ export default function Layout({ children, postCount, tagsCount, data, img }) {
   }, [isLoading]);
 
   // ------------ LozadJs Observe ------------//
-  useEffect(() => {
-    const lazyload = lozad("img, [data-background-image]", {
-      loaded: function (el) {
-        el.addClass("lozaded");
-      },
-    });
-    lazyload.observe();
-  }, []);
+  // useEffect(() => {
+  //   const lazyload = lozad("img, [data-background-image]", {
+  //     loaded: function (el) {
+  //       el.addClass("lozaded");
+  //     },
+  //   });
+  //   lazyload.observe();
+  // }, []);
   return (
     // return content
     <>
