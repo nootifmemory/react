@@ -21,7 +21,7 @@ export default function Page({
               <article className="item show">
                 <div className="cover">
                   {/* <div className="cover min-w-1/2"> */}
-                  <Link href="/posts/[id]" as={`/posts/${id}`}  passHref={true}>
+                  <Link href="/posts/[id]" as={`/posts/${id}`}  passHref={true} prefetch={false}>
                     <a itemProp="url" title={title}>
                       <img
                         data-src={`https://source.unsplash.com/collection/4325322?${
@@ -46,7 +46,7 @@ export default function Page({
                     </span>
                   </div>
                   <h3>
-                    <Link href="/posts/[id]" as={`/posts/${id}`}  passHref={true}>
+                    <Link href="/posts/[id]" as={`/posts/${id}`}  passHref={true} prefetch={false}>
                       <a itemProp="url" title={title}>
                         {title}
                       </a>
@@ -54,7 +54,7 @@ export default function Page({
                   </h3>
                   <div className="excerpt">{StickyPostsData[index]}</div>
                 </div>
-                <Link href="/posts/[id]" as={`/posts/${id}`}  passHref={true}>
+                <Link href="/posts/[id]" as={`/posts/${id}`}  passHref={true} prefetch={false}>
                   <a itemProp="url" className="btn">
                     more...
                   </a>
@@ -70,7 +70,7 @@ export default function Page({
             <div className="segments posts" key={"UID" + id}>
               <article className="item show">
                 <div className="cover">
-                  <Link href="/posts/[id]" as={`/posts/${id}`}  passHref={true}>
+                  <Link href="/posts/[id]" as={`/posts/${id}`}  passHref={true} prefetch={false}>
                     <a itemProp="url" title={title}>
                       <img
                         data-src={`https://source.unsplash.com/collection/4325322?${
@@ -95,7 +95,7 @@ export default function Page({
                     </span>
                   </div>
                   <h3>
-                    <Link href="/posts/[id]" as={`/posts/${id}`}  passHref={true}>
+                    <Link href="/posts/[id]" as={`/posts/${id}`}  passHref={true} prefetch={false}>
                       <a itemProp="url" title={title}>
                         {title}
                       </a>
@@ -103,7 +103,7 @@ export default function Page({
                   </h3>
                   <div className="excerpt">{PostsData[index]}</div>
                 </div>
-                <Link href="/posts/[id]" as={`/posts/${id}`}  passHref={true}>
+                <Link href="/posts/[id]" as={`/posts/${id}`}  passHref={true} prefetch={false}>
                   <a itemProp="url" className="btn">
                     more...
                   </a>
