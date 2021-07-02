@@ -26,7 +26,6 @@ export default function Footer({ data }) {
             </ul>
           </div>
         </div>
-        {/* {{ partial('_partials/footer.njk', {}, {cache: true}) }} */}
         <div className="status">
           <div className="copyright">
           <span className="copyrightHolder" title="Copyright">Copyright by NooTif base on Shoka Theme Hexo</span><br></br>
