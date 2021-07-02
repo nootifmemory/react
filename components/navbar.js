@@ -296,7 +296,7 @@ const NavBar = function () {
       <div className="inner">
         <div id="brand" className="affix">
           <div className="pjax">
-            <Link href="/" rel="start">
+            <Link href="/" rel="start" passHref>
               <a className="logo">
                 <p className="artboard">NooTif</p>
                 <h1 itemProp="name headline" className="title">

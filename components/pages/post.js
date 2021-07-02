@@ -105,25 +105,6 @@ export default function Post({ postData, content, getTags }) {
           </footer>
         </article>
       </div>
-      {/* <article>
-        <h1 className="active">{postData.title}</h1>
-        <h3>{postData.date}</h3>
-        <div
-          className="body md"
-          dangerouslySetInnerHTML={{ __html: content }}
-        />
-      </article>
-      {getTags.includes("javascript") ? (
-        <button
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
-          onClick={() => location.reload()}
-          type="button"
-        >
-          Load JS
-        </button>
-      ) : (
-        ""
-      )} */}
     </>
   );
 }
