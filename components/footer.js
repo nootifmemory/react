@@ -17,7 +17,7 @@ export default function Footer({ data }) {
                 <li className="item" key={`FT${id}`}>
                   <div className="breadcrumb"></div>
                   <span>
-                    <Link href="/posts/[id]" as={`/posts/${id}`}  passHref={true} prefetch={false}>
+                    <Link href="/posts/[id]" as={`/posts/${id}`}>
                       <a title={title}>{title}</a>
                     </Link>
                   </span>
