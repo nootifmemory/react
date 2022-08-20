@@ -1,0 +1,35 @@
+
+                /*Floating CSS Start*/
+.wrapper{
+  width:100%;
+  margin:0 auto;
+}
+        @keyframes fade-in-up {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .stuck {
+            position: fixed;
+            bottom: -10px;
+            right: 50px;
+            transform: translateY(100%);
+            width: 460px;
+            height: 300px;
+            animation: fade-in-up .25s ease forwards;
+            z-index: 999;
+        }
+
+        /*Floating CSS End*/
+
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: #ff7037;}
+    50%  {background-color: red;}
+    100% {background-color: #ff7037;}
+}
