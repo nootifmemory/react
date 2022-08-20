@@ -21,11 +21,12 @@ jobs:
           key: ${{ runner.OS }}-npm-cache
           restore-keys: |
             ${{ runner.OS }}-npm-cache
-      - name: Install Dependencies
+      - name: Install & Update Dependencies
         run: |
           npm install
+          npm update
       - name: Build
-        run: npm run static
+        run: npm run build && npm run export
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
